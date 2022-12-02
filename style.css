@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+  background-color: #372851;
+}
+
+p {
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+}
+
+li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  }
+
+button {
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+}
+
+h1 {
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+}
+
+h2, .typedbold {
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+}
+
+h3, h4, a {
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+}
+
+.borderpurple {
+  border-color: #372046;
+}
+
+
+#popup {
+  display: none;
+  opacity: 1;
+}
+.popup__wrapper {
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+.popup__container {
+  background: 0 0;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0;
+  width: fit-content;
+  height: fit-content;
+}
+.popup__container img {
+  width: 80%;
+}
+.popup__container span {
+  float: right;
+  cursor: pointer;
+  font-size: 25px;
+  width: 98%;
+  height: 25px;
+  text-align: center;
+  background-color: transparent;
+  text-align: right;
+  padding: 1%;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.card {
+  perspective: 1000px;
+}
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+}
+
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  
+}
+
+
+.card__face--back {
+
+  transform: rotateY(180deg);
+}
+
+
